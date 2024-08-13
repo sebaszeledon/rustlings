@@ -2,13 +2,18 @@
 fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
+    } else if fizzish == "fuzz"{
+        "bar"
     } else {
-        1
+        "baz"
     }
 }
 
 fn main() {
     // You can optionally experiment here.
+    foo_if_fizz("fizz");
+    foo_if_fizz("fuzz");
+    foo_if_fizz("jazz");
 }
 
 // TODO: Read the tests to understand the desired behavior.
